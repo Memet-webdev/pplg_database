@@ -15,3 +15,13 @@ CREATE TABLE IF NOT EXISTS admin (
     username VARCHAR(50) NOT NULL UNIQUE,
     password VARCHAR(255) NOT NULL
 );
+
+-- Membuat tabel buku
+CREATE TABLE buku (
+    kode_buku VARCHAR(50) PRIMARY KEY,
+    judul_buku VARCHAR(255) NOT NULL,
+    nama_pengarang VARCHAR(255) NOT NULL,
+    penerbit VARCHAR(255) NOT NULL,
+    id_kategori INT NOT NULL,
+    no_urut INT NOT NULL
+);
